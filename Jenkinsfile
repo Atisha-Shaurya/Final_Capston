@@ -1,8 +1,8 @@
 pipeline{
     agent any
     environment { 
-        registry = "pavneetkaur15/capstone" 
-        registryCredential = 'jenkins-docker' 
+        registry = "atishashaurya2865/final_capstone1" 
+        registryCredential = 'atisha' 
         dockerImage = '' 
     }    
     tools { 

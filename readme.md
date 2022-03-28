@@ -37,7 +37,7 @@
 
 ## Table of Contents ##
 1. [Philosophy](#Philosophy)
-2. [Medium Articles](#Medium-Articles)
+2. [Medium Articles](#Medium-Articles)atisha
 3. [Spring Boot](#Spring-Boot)
 4. [Application](#Application)
 5. [Database Schema](#Database-Schema)
@@ -84,8 +84,7 @@ The kit would have been incomplete if it did not have a concrete use case to imp
 
 The _Admin user_ can access this application on browser (laptop or mobile/tablet, doesn't really matter as this is built using bootstrap, material design and is completely responsive) and can perform the following actions :
 
-1. Signup
-2. Login (Spring sessions)
+1. SignupLogin (Spring sessions)
 3. Update their profile
 4. Create an agency
 5. Add buses to the agency

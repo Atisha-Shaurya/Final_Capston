@@ -45,10 +45,10 @@ pipeline{
                     } 
                 }
             }
-            stage("Deploying"){
-                    steps{
-                        withKubeConfig([credentialsId: 'atishak8s']){
-                            sh 'kubectl get pods'
+            //stage("Deploying"){
+                   // steps{
+                     //   withKubeConfig([credentialsId: 'atishak8s']){
+                       //     sh 'kubectl get pods'
                         }
                     }
            }

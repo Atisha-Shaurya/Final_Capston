@@ -45,13 +45,17 @@ pipeline{
                     } 
                 }
             }
-            //stage("Deploying"){
-                   // steps{
-                     //   withKubeConfig([credentialsId: 'atishak8s']){
-                       //     sh 'kubectl get pods'
+            stage("Deployment-k8s"){
+                    steps{
+                        withKubeConfig([credentialsId: 'atishak8s']){
+                            sh 'pwd && ls'
+                            sh 'kubectl apply -f /home/knoldus/proj-svc.yml'
+                            sh 'kubectl apply -f /home/knoldus/proj-dep.yml'
+                            sh 'kubectl get all'
                         }
                     }
            }
+            
 
       }
 }

@@ -49,8 +49,8 @@ pipeline{
                     steps{
                         withKubeConfig([credentialsId: 'atishak8s']){
                             sh 'pwd && ls'
-                            sh 'kubectl apply -f /home/knoldus/proj-svc.yml'
-                            sh 'kubectl apply -f /home/knoldus/proj-dep.yml'
+                            sh 'kubectl apply -f /home/atisha/deployapp.yml'
+                            sh 'kubectl apply -f /home/atisha/serviceapp.yml'
                             sh 'kubectl get all'
                         }
                     }
